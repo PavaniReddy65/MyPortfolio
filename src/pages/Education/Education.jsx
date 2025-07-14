@@ -15,24 +15,45 @@ const EducationSection = () => {
 
   const educationData = [
     {
-      degree: "Secondary School Certificate (SSC)",
-      school: "Natore Textile Institute",
+      degree: "X – Secondary Education",
+      school: "AVR ZP High School, Edlapalli",
       mascot: "📘",
-      year: "2019-2021",
-      achievements: ["GPA: 4.89", "Subject: Science"],
-      skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
+      year: "2016 – 2017",
+      achievements: ["Scored 96.33%"],
+      skills: ["Mathematics", "Science", "Social", "English"],
       description:
-        "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
+        "Built a strong foundation in mathematics and science, with consistent academic performance and self-discipline in rural education settings.",
     },
     {
-      degree: "Higher Secondary Certificate (HSC)",
-      school: "Dottopara Model Degree College",
+      degree: "Intermediate – MPC",
+      school: "NRI Junior Kalasala, Tenali",
       mascot: "📗",
-      year: "2021-2023",
-      achievements: ["GPA: 4.25", "Subject: Arts"],
-      skills: ["Literature", "Social Studies", "Economics", "History"],
+      year: "2018 – 2020",
+      achievements: ["Scored 91.5%", "Maths, Physics, Chemistry"],
+      skills: ["Problem Solving", "Time Management", "Logical Thinking"],
       description:
-        "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
+        "Focused on analytical thinking and STEM fundamentals, which helped shape my interest in programming and backend development.",
+    },
+    {
+      degree: "B.Tech – AI & Data Science",
+      school: "St. Mary's Women's Engineering College",
+      mascot: "🎓",
+      year: "2022 – 2026",
+      achievements: [
+        "Innovation Fair 2K25: Talk to DB project",
+        "Hackathon 2025 Participant – RVIT College",
+      ],
+      skills: [
+        "Python",
+        "JavaScript",
+        "Django",
+        "REST API",
+        "AI",
+        "ML",
+        "Data Analysis",
+      ],
+      description:
+        "Pursuing a career-oriented curriculum blending artificial intelligence, machine learning, and full-stack development through projects and certifications.",
     },
   ];
 

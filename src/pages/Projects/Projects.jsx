@@ -5,44 +5,44 @@ import PropTypes from "prop-types";
 
 const projects = [
   {
-    title: "Olova! A Lightweight JavaScript Library",
+    title: "College ERP System",
     description:
-      "A lightweight JavaScript library for creating beautiful, responsive UI components.",
-    src: "rock.jpg",
-    link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
-    color: "#5196fd",
-    githubLink: "https://github.com/olovajs/olova",
-    liveLink: "https://olova.js.org/",
+      "A Django-based ERP platform to manage student, staff, courses, and academic details efficiently. Features include role-based dashboards, attendance, and secure login.",
+    src: "collegeerp.jpg",
+    link: "https://i.postimg.cc/BbY4F95d/collegeerp.png",
+    color: "#4F46E5",
+    githubLink: "https://github.com/pavanireddy/College-ERP",
+    liveLink: "https://college-erp-demo.vercel.app",
   },
   {
-    title: "A sleek portfolio built with React and Tailwind CSS ",
+    title: "Online Plant Shopping Page",
     description:
-      "A sleek portfolio built with React and Tailwind CSS to showcase your skills, projects, and experience in a modern design.",
-    src: "tree.jpg",
-    link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
-    color: "#8f89ff",
-    githubLink: "https://github.com/seraprogrammer/portfolio",
-    liveLink: "https://codervai.vercel.app",
+      "A responsive and elegant HTML-CSS static website that displays plant products with beautiful design elements for a smooth user experience.",
+    src: "plantshop.jpg",
+    link: "https://i.postimg.cc/FHzDNt79/plantshop.png",
+    color: "#10B981",
+    githubLink: "https://github.com/pavanireddy/Plant-Shopping-Page",
+    liveLink: "https://pavanireddyplantshop.netlify.app",
   },
   {
-    title: "🚀 CodeWhisperer",
+    title: "Virtual Assistant using Python",
     description:
-      "🚀 CodeWhisperer A powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
-    src: "water.jpg",
-    link: "https://i.postimg.cc/J4jPVFY0/Annotation-2025-04-01-204723.png",
-    color: "#fff",
-    githubLink: "https://github.com/seraprogrammer/codewhisperer",
-    liveLink: "https://codewhisperer.vercel.app/",
+      "An AI-powered Python voice assistant capable of automating desktop tasks, opening applications, telling time, and fetching data via voice commands.",
+    src: "assistant.jpg",
+    link: "https://i.postimg.cc/SKzZfrNN/virtualassistant.png",
+    color: "#6366F1",
+    githubLink: "https://github.com/pavanireddy/Virtual-Assistant",
+    liveLink: "https://virtual-assistant-demo.vercel.app",
   },
   {
-    title: "CodeKori 🔥",
+    title: "HireHub - Job Portal Website",
     description:
-      "CodeKori is a powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
-    src: "house.jpg",
-    link: "https://i.postimg.cc/cHQr4fpR/Annotation-2025-04-01-205350.png",
-    color: "#ed649e",
-    githubLink: "https://github.com/seraprogrammer/CodeKori",
-    liveLink: "https://codekori.js.org",
+      "A job portal interface built with HTML, CSS, and JS, allowing job seekers to browse listings and recruiters to post jobs. Clean and intuitive layout.",
+    src: "jobportal.jpg",
+    link: "https://i.postimg.cc/kGRnMzJV/hirehub.png",
+    color: "#EC4899",
+    githubLink: "https://github.com/pavanireddy/HireHub",
+    liveLink: "https://hirehub.netlify.app",
   },
 ];
 
@@ -54,7 +54,7 @@ export default function Projects() {
   });
 
   useEffect(() => {
-    // Add specific styles for 1366x768 resolution
+    // Inject responsive scaling styles for 1366x768 and similar resolutions
     const style = document.createElement("style");
     style.textContent = `
       @media screen and (width: 1366px) and (height: 768px),
@@ -71,7 +71,6 @@ export default function Projects() {
     `;
     document.head.appendChild(style);
 
-    // Resolution check function
     const checkResolution = () => {
       const isTargetResolution =
         window.innerWidth >= 1360 &&
@@ -158,9 +157,9 @@ function Card({
           transition: { duration: 0.3 },
         }}
       >
-        {/* Modern split card design */}
+        {/* Card Container */}
         <div className="w-full flex flex-col md:flex-row bg-zinc-900 rounded-2xl overflow-hidden shadow-xl">
-          {/* Image section - full width on mobile, 55% on desktop */}
+          {/* Image Section */}
           <div className="w-full md:w-[55%] h-[250px] md:h-[400px] lg:h-[450px] relative overflow-hidden">
             <motion.img
               src={url}
@@ -170,8 +169,7 @@ function Card({
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.4 }}
             />
-
-            {/* Colored overlay on hover */}
+            {/* Colored overlay */}
             <motion.div
               className="absolute inset-0"
               style={{ backgroundColor: color, mixBlendMode: "overlay" }}
@@ -179,14 +177,13 @@ function Card({
               whileHover={{ opacity: 0.3 }}
               transition={{ duration: 0.3 }}
             />
-
             {/* Project number */}
             <div className="absolute top-4 left-4 md:top-6 md:left-6 bg-black/50 backdrop-blur-md text-white px-3 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium">
               Project {i + 1}
             </div>
           </div>
 
-          {/* Content section - full width on mobile, 45% on desktop */}
+          {/* Content Section */}
           <div className="w-full md:w-[45%] p-6 md:p-8 lg:p-10 flex flex-col justify-between">
             <div>
               <div className="flex items-center gap-3 mb-4 md:mb-6">
@@ -196,7 +193,6 @@ function Card({
                 />
                 <div className="h-[1px] w-12 md:w-20 bg-gray-600" />
               </div>
-
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-2 md:mb-4">
                 {title}
               </h2>
@@ -279,7 +275,6 @@ function Card({
   );
 }
 
-// Add PropTypes validation
 Card.propTypes = {
   i: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
